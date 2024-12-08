@@ -2,21 +2,14 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Calendar, Check } from 'lucide-react';
 import Certified from './footer/Certified';
 import JoinModule from '@/components/ui/JoinModule';
 import logo from '@/public/images/company/logo_small.png';
-import github from '@/public/images/icons/github.svg';
-import slack from '@/public/images/icons/slack.svg';
-import youtube from '@/public/images/icons/youtube.svg';
-import linkedin from '@/public/images/icons/linkedin.svg';
-import twitter from '@/public/images/icons/twitter.svg';
 
 const CALENDLY_URL = 'https://calendly.com/d/44n-hc4-th3';
 
 const Footer = () => {
-	const slackLink = 'https://io.permit.io/slack';
 	const [isOpen, setIsOpen] = useState(false);
 	const now = new Date();
 	const year = Math.max(now.getFullYear(), 2022);
@@ -43,23 +36,39 @@ const Footer = () => {
 							<p className='text-sm font-bold uppercase'>Product</p>
 							<ul className='flex flex-col gap-3 whitespace-nowrap text-sm'>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/blog'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/blog'>
 										Blog
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/videos'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/videos'>
 										Videos
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/pricing'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/pricing'>
 										Pricing
-									</Link>
+									</a>
 								</li>
-								{/* https://stackoverflow.com/questions/75115890/link-anchor-in-nextjs-not-scrolling-to-id-but-when-manually-typed-in-the-ur */}
+								{/* https://stackoverflow.com/questions/75115890/a-anchor-in-nextjs-not-scrolling-to-id-but-when-manually-typed-in-the-ur */}
 								<li>
-									<a className='hover:text-theme_purple transition' href='/pricing#faqs'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/pricing#faqs'>
 										FAQ&apos;s
 									</a>
 								</li>
@@ -68,7 +77,7 @@ const Footer = () => {
 										target='_blank'
 										rel='noopener noreferrer'
 										href='https://docs.permit.io/'
-										className='hover:text-theme_purple transition'>
+										className='transition hover:text-_7011E4'>
 										Docs
 									</a>
 								</li>
@@ -76,7 +85,7 @@ const Footer = () => {
 									<a
 										target='_blank'
 										rel='noopener noreferrer'
-										className='hover:text-theme_purple transition'
+										className='transition hover:text-_7011E4'
 										href='https://permit.productlane.com/roadmap'>
 										Roadmap
 									</a>
@@ -87,34 +96,58 @@ const Footer = () => {
 							<p className='text-sm font-bold uppercase'>Solutions</p>
 							<ul className='flex flex-col gap-3 whitespace-nowrap text-sm'>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/rbac'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/rbac'>
 										RBAC
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/abac'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/abac'>
 										ABAC
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/rebac'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/rebac'>
 										ReBAC
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/elements'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/elements'>
 										Elements
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/foaz'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/foaz'>
 										FoAz
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/healthcare'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/healthcare'>
 										Healthcare
-									</Link>
+									</a>
 								</li>
 							</ul>
 						</nav>
@@ -122,24 +155,40 @@ const Footer = () => {
 							<p className='text-sm font-bold uppercase'>Company</p>
 							<ul className='flex flex-col gap-3 whitespace-nowrap text-sm'>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/about'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/about'>
 										About
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/customers'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/customers'>
 										Customers
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/open-source'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/open-source'>
 										Open Source
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/career'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/career'>
 										Careers
-									</Link>
+									</a>
 								</li>
 							</ul>
 						</nav>
@@ -147,21 +196,29 @@ const Footer = () => {
 							<p className='text-sm font-bold uppercase'>Support</p>
 							<ul className='flex flex-col gap-3 whitespace-nowrap text-sm'>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/legal/terms-and-conditions'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/legal/terms-and-conditions'>
 										Terms & Conditions
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link className='hover:text-theme_purple transition' href='/legal/privacy-policy'>
+									<a
+										className='transition hover:text-_7011E4'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://www.permit.io/legal/privacy-policy'>
 										Privacy Policy
-									</Link>
+									</a>
 								</li>
 								<li>
 									<a
 										target='_blank'
 										rel='noopener noreferrer'
 										href='https://permit-io.instatus.com/'
-										className='hover:text-theme_purple transition'>
+										className='transition hover:text-_7011E4'>
 										Service Status
 									</a>
 								</li>
@@ -170,7 +227,7 @@ const Footer = () => {
 										target='_blank'
 										rel='noopener noreferrer'
 										href='mailto:help@permit.io'
-										className='hover:text-theme_purple transition'>
+										className='transition hover:text-_7011E4'>
 										Email
 									</a>
 								</li>

@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { socialMediaLink } from '@/lib/navbar-links';
 
 const DesktopMenu = () => {
+	const ctaLink = 'https://app.permit.io/';
 	const [data, setData] = useState<Array<string | void | undefined>>([]);
 	const [scroll] = useWindowScroll();
 
@@ -36,7 +37,7 @@ const DesktopMenu = () => {
 			</div>
 			<div className={`flex items-center gap-2`}>
 				<Button variant='outline' asChild>
-					<a href='https://app.permit.io/'>Sign In</a>
+					<a href={ctaLink}>Sign In</a>
 				</Button>
 				<Button
 					className={`${
@@ -44,7 +45,7 @@ const DesktopMenu = () => {
 					} duration-300`}
 					variant='default'
 					asChild>
-					<a href='https://app.permit.io/'>Start Now</a>
+					<a href={ctaLink}>Start Now</a>
 				</Button>
 			</div>
 		</div>

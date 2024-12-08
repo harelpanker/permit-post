@@ -9,16 +9,16 @@ export const navLinks = [
 		name: 'Solutions',
 		isDrop: true,
 		links: [
-			{ id: 1, name: 'RBAC', link: '/rbac' },
-			{ id: 2, name: 'ABAC', link: '/abac' },
+			{ id: 1, name: 'RBAC', link: 'https://www.permit.io/rbac' },
+			{ id: 2, name: 'ABAC', link: 'https://www.permit.io/abac' },
 			{
 				id: 3,
 				name: 'ReBAC',
-				link: '/rebac',
+				link: 'https://www.permit.io/rebac',
 			},
-			{ id: 4, name: 'Elements', link: '/elements' },
-			{ id: 5, name: 'FoAz', link: '/foaz' },
-			{ id: 6, name: 'Healthcare', link: '/healthcare' },
+			{ id: 4, name: 'Elements', link: 'https://www.permit.io/elements' },
+			{ id: 5, name: 'FoAz', link: 'https://www.permit.io/foaz' },
+			{ id: 6, name: 'Healthcare', link: 'https://www.permit.io/healthcare' },
 		],
 	},
 	{
@@ -26,8 +26,8 @@ export const navLinks = [
 		name: 'Learn',
 		isDrop: true,
 		links: [
-			{ id: 1, name: 'Videos', link: '/videos' },
-			{ id: 2, name: 'Blog', link: '/blog' },
+			{ id: 1, name: 'Videos', link: 'https://www.permit.io/videos' },
+			{ id: 2, name: 'Blog', link: 'https://www.permit.io/blog' },
 			{
 				id: 3,
 				name: 'CSL Podcast',
@@ -40,7 +40,7 @@ export const navLinks = [
 		id: 3,
 		name: 'Pricing',
 		isDrop: false,
-		link: '/pricing',
+		link: 'https://www.permit.io/pricing',
 	},
 	{ id: 4, name: 'Docs', link: 'https://docs.permit.io', external: true },
 	{
@@ -48,10 +48,10 @@ export const navLinks = [
 		name: 'Company',
 		isDrop: true,
 		links: [
-			{ id: 1, name: 'About', link: '/about' },
-			{ id: 2, name: 'Open Source', link: '/open-source' },
-			{ id: 3, name: 'Careers', link: '/career' },
-			{ id: 4, name: 'Customers', link: '/customers' },
+			{ id: 1, name: 'About', link: 'https://www.permit.io/about' },
+			{ id: 2, name: 'Open Source', link: 'https://www.permit.io/open-source' },
+			{ id: 3, name: 'Careers', link: 'https://www.permit.io/careers' },
+			{ id: 4, name: 'Customers', link: 'https://www.permit.io/customers' },
 		],
 	},
 ];

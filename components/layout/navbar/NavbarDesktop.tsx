@@ -5,7 +5,7 @@ import { navLinks } from '@/lib/navbar-links';
 
 const NavbarDesktop = () => {
 	return (
-		<nav className='hidden items-center justify-center gap-6 lg:flex xl:w-full'>
+		<nav className='hidden items-center justify-center gap-6 xl:flex 2xl:w-full'>
 			<ul className='group flex items-center gap-2'>
 				{navLinks.map((link) => (
 					<li className='flex items-center justify-center font-medium' key={link.id}>

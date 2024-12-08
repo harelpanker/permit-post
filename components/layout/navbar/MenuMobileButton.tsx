@@ -11,7 +11,7 @@ const MenuMobileButton: FC<MenuMobileButtonProps> = ({ open = false, handleOpen 
 			onClick={handleOpen}
 			aria-label={`${open ? 'close' : 'open'} menu`}
 			type='button'
-			className='flex h-6 w-6 flex-col justify-around lg:hidden'>
+			className='flex h-6 w-6 flex-col justify-around xl:hidden'>
 			<div
 				className={`h-px w-full bg-_451E11 transition ${
 					open ? 'translate-y-[6px] -rotate-45' : 'translate-y-[2px] rotate-0'

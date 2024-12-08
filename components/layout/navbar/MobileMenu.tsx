@@ -27,7 +27,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ handleOpen }) => {
 													<Link
 														key={l.id}
 														href={l.link}
-														className={`w-full p-4 transition hover:bg-[#F3E7FC] hover:text-[#7011E4]`}>
+														className={`w-full p-4 transition hover:bg-[#F3E7FC] hover:text-_7011E4`}>
 														{l.name}
 													</Link>
 												))}

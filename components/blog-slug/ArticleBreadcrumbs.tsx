@@ -7,9 +7,13 @@ type ArticleBreadcrumbsProps = { postName: string };
 const ArticleBreadcrumbs: FC<ArticleBreadcrumbsProps> = ({ postName }) => {
 	return (
 		<div className='flex flex-wrap gap-2 text-sm font-medium'>
-			<Link href='/' className={`${styles.breadcrumbsLink}`}>
+			<a
+				href='https://www.permit.io/'
+				target='_blank'
+				rel='noreferrer noopener'
+				className={`${styles.breadcrumbsLink}`}>
 				Home
-			</Link>
+			</a>
 			/
 			<a
 				href='https://www.permit.io/blog'
