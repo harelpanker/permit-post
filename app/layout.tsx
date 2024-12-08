@@ -2,10 +2,9 @@ import type { Metadata } from 'next';
 import { ibm, inter, poppins } from '@/lib/fonts';
 import Navbar from '@/components/layout/Navbar';
 import './globals.css';
+import Footer from '@/components/layout/Footer';
 
-type Props = {
-	children: React.ReactNode;
-};
+type Props = { children: React.ReactNode };
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://www.permit.io'),
@@ -33,6 +32,7 @@ export default function RootLayout({ children }: Readonly<Props>) {
 				<div className='overflow-clip'>
 					<Navbar />
 					<main className='relative z-10 w-full overflow-clip'>{children}</main>
+					<Footer />
 				</div>
 			</body>
 		</html>

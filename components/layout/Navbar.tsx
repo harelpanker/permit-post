@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { useWindowScroll, useViewportSize } from '@mantine/hooks';
-import NavbarDesktop from './NavbarDesktop';
-import DesktopMenu from './DesktopMenu';
-import MobileMenu from './MobileMenu';
-import NavbarLogo from './NavbarLogo';
-import MenuMobileButton from './MenuMobileButton';
+import NavbarDesktop from './navbar/NavbarDesktop';
+import DesktopMenu from './navbar/DesktopMenu';
+import MobileMenu from './navbar/MobileMenu';
+import NavbarLogo from './navbar/NavbarLogo';
+import MenuMobileButton from './navbar/MenuMobileButton';
 
 const Navbar = () => {
 	const [scroll] = useWindowScroll();
