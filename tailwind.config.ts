@@ -27,6 +27,7 @@ export default {
 				_FFCCA7: '#FFCCA7',
 				_D1B9B0: '#D1B9B0',
 				_7011E4: '#7011E4',
+				_FFE8D7: '#FFE8D7',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

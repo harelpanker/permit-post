@@ -11,9 +11,13 @@ const ArticleBreadcrumbs: FC<ArticleBreadcrumbsProps> = ({ postName }) => {
 				Home
 			</Link>
 			/
-			<Link href='/blog' className={`${styles.breadcrumbsLink}`}>
+			<a
+				href='https://www.permit.io/blog'
+				target='_blank'
+				rel='noreferrer noopener'
+				className={`${styles.breadcrumbsa}`}>
 				Blog
-			</Link>
+			</a>
 			/<div className={`${styles.breadcrumbsLink} pointer-events-none`}>{postName}</div>
 		</div>
 	);

@@ -24,8 +24,8 @@ const Footer = () => {
 	const openModal = () => setIsOpen(true);
 
 	return (
-		<footer className='bg-FFE8D7 relative z-20 px-5 py-10 lg:px-12 lg:py-16'>
-			<div className='container flex flex-col gap-12 border-t border-solid border-slate-400 pt-10'>
+		<footer className='relative z-20 bg-_FFE8D7 px-5 py-10 lg:px-12 lg:py-16'>
+			<div className='container flex flex-col gap-12 pt-10'>
 				{/* top */}
 				<div className='flex flex-col items-center justify-between gap-10 xl:grid xl:grid-cols-3 xl:items-start'>
 					{/* top left */}
@@ -35,53 +35,6 @@ const Footer = () => {
 								<Image className='w-auto' src={logo} alt='logo' width={104} height={30} />
 								<p className='mt-[1px] text-sm'>Fullstack Permissions</p>
 							</div>
-							<ul className='group flex items-center gap-5'>
-								<li>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href='https://github.com/permitio'
-										className='hover:text-theme_purple flex items-center justify-center text-sm font-bold opacity-100 transition duration-500'>
-										<Image className='w-auto' src={github} alt='github' width={24} height={24} />
-									</a>
-								</li>
-								<li>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href={slackLink}
-										className='slack_footer hover:text-theme_purple flex items-center justify-center text-sm font-bold opacity-100 transition duration-500'>
-										<Image className='pointer-events-none w-auto' src={slack} alt='slack' width={24} height={24} />
-									</a>
-								</li>
-								<li>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href='https://twitter.com/permit_io'
-										className='hover:text-theme_purple flex items-center justify-center text-sm font-bold opacity-100 transition duration-500'>
-										<Image className='w-auto' src={twitter} alt='twitter' width={24} height={24} />
-									</a>
-								</li>
-								<li>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href='https://www.youtube.com/channel/UCWUHX5q_fFPBhrJF_J-NTbg'
-										className='hover:text-theme_purple flex items-center justify-center text-sm font-bold opacity-100 transition duration-500'>
-										<Image className='w-auto' src={youtube} alt='youtube' width={26} height={26} />
-									</a>
-								</li>
-								<li>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href='https://www.linkedin.com/company/permitio/'
-										className='hover:text-theme_purple flex items-center justify-center text-sm font-bold opacity-100 transition duration-500'>
-										<Image className='w-auto' src={linkedin} alt='linkedin' width={20} height={20} />
-									</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 					{/* top center */}

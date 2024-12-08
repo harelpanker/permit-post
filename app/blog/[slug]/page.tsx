@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation';
-// service
 import { getMax3PostsCards, getMembersTotalNumber, getPostDetails } from '@/lib/services/index';
+import Article from '@/components/blog-slug/Article';
+import SectionCTA from '@/components/SectionCTA';
+import SectionDotsBackground from '@/components/SectionDotsBackground';
+import '@/styles/post/style.css';
 
 type PageProps = { params: { slug: string } };
-
-import '@/styles/post/style.css';
-import Article from '@/components/blog-slug/Article';
 
 export default async function PostPage({ params: { slug } }: PageProps) {
 	const memberNumber = await getMembersTotalNumber();
@@ -18,6 +18,8 @@ export default async function PostPage({ params: { slug } }: PageProps) {
 	return (
 		<div>
 			<Article post={postData} readMore={readMoreData || []} />
+			<SectionCTA memberNumber={memberNumber} />
+			<SectionDotsBackground />
 		</div>
 	);
 }
