@@ -6,12 +6,12 @@ import Link from 'next/link';
 import { Calendar, Check } from 'lucide-react';
 import Certified from './footer/Certified';
 import JoinModule from '@/components/ui/JoinModule';
-import logo from '../../public/images/logo_small.png';
-import github from '../../public/images/sm/github.svg';
-import slack from '../../public/images/sm/slack.svg';
-import youtube from '../../public/images/sm/youtube.svg';
-import linkedin from '../../public/images/sm/linkedin.svg';
-import twitter from '../../public/images/sm/twitter.svg';
+import logo from '@/public/images/company/logo_small.png';
+import github from '@/public/images/icons/github.svg';
+import slack from '@/public/images/icons/slack.svg';
+import youtube from '@/public/images/icons/youtube.svg';
+import linkedin from '@/public/images/icons/linkedin.svg';
+import twitter from '@/public/images/icons/twitter.svg';
 
 const CALENDLY_URL = 'https://calendly.com/d/44n-hc4-th3';
 
@@ -228,7 +228,7 @@ const Footer = () => {
 					<div className='flex items-start justify-start lg:justify-self-end'>
 						<button
 							onClick={openModal}
-							className='schedule_a_meeting border-theme_purple bg-theme_purple hover:text-theme_purple group col-span-2 flex items-center justify-between gap-4 self-center justify-self-center rounded-full border py-2 pl-[22px] pr-4 text-sm font-semibold text-slate-50 transition duration-300 hover:bg-transparent md:col-span-3'>
+							className='schedule_a_meeting group col-span-2 flex items-center justify-between gap-4 self-center justify-self-center rounded-full border border-_974EF2 bg-_974EF2 py-2 pl-[22px] pr-4 text-sm font-semibold text-_FDFCFC transition duration-300 hover:bg-transparent hover:text-_974EF2 md:col-span-3'>
 							<div className='flex items-center gap-3'>
 								<Calendar className='pointer-events-none h-3 w-3' />
 								<span className='pointer-events-none'>Schedule a Meeting</span>

@@ -17,7 +17,7 @@ const buttonVariants = cva(
          ring-offset-_974EF2 transition hover:border-_974EF2 hover:bg-_A666F4
          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50`,
 				outline:
-					'hover:border-theme-orange-dark-2 rounded-full border-D1B9B0 bg-_FFF1E7 text-_2B1400 hover:border-_A18072 hover:bg-_FFCCA7',
+					'hover:border-theme-orange-dark-2 rounded-full border-_D1B9B0 bg-_FFF1E7 text-_2B1400 hover:border-_A18072 hover:bg-_FFCCA7',
 			},
 			size: {
 				default: 'h-12 px-5 py-3',

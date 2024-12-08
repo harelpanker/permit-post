@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
 import Link from 'next/link';
-import { Button } from '../ui/button';
 import { useWindowScroll } from '@mantine/hooks';
 import { navLinks } from '@/lib/navbar-links';
+import { Button } from '@/components/ui/button';
 
 type MobileMenuProps = {
 	handleOpen: () => void;

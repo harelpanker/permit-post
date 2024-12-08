@@ -2,9 +2,9 @@ import { FC } from 'react';
 import Image from 'next/image';
 import ProductHuntButton from '@/components/ui/ProductHuntButton';
 
-import hipaaLogo from '/public/images/footer/hipaa.svg';
-import isoLogo from '/public/images/footer/iso.svg';
-import socLogo from '/public/images/footer/soc.svg';
+import hipaaLogo from '@/public/images/footer/hipaa.svg';
+import isoLogo from '@/public/images/footer/iso.svg';
+import socLogo from '@/public/images/footer/soc.svg';
 
 type CertifiedProps = {};
 
