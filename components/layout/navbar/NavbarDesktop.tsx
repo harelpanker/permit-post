@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
 import { navLinks } from '@/lib/navbar-links';
@@ -26,21 +25,13 @@ const NavbarDesktop = () => {
 											link.links.map((l: { id: number; name: string; link: string }) => (
 												<li key={l.id} className='grid w-full'>
 													<>
-														{l.link.includes('https:') ? (
-															<a
-																target='_blank'
-																rel='noreferrer'
-																className={`w-full p-4 transition hover:bg-[#F3E7FC] hover:text-[#7011E4]`}
-																href={l.link}>
-																{l.name}
-															</a>
-														) : (
-															<Link
-																className={`w-full p-4 transition hover:bg-[#F3E7FC] hover:text-[#7011E4]`}
-																href={l.link}>
-																{l.name}
-															</Link>
-														)}
+														<a
+															target='_blank'
+															rel='noreferrer'
+															className={`w-full p-4 transition hover:bg-[#F3E7FC] hover:text-[#7011E4]`}
+															href={l.link}>
+															{l.name}
+														</a>
 													</>
 												</li>
 											))}
@@ -48,22 +39,13 @@ const NavbarDesktop = () => {
 								</HoverCardContent>
 							</HoverCard>
 						) : (
-							<>
-								{!link.external && (
-									<Link href={`${link.link && link.link}`} className='px-2 py-2 transition hover:text-_974EF2'>
-										{link.name}
-									</Link>
-								)}
-								{link.external && (
-									<a
-										rel='noopener noreferrer'
-										target='_blank'
-										href={`${link.link && link.link}`}
-										className='px-2 py-2 transition hover:text-_974EF2'>
-										{link.name}
-									</a>
-								)}
-							</>
+							<a
+								rel='noopener noreferrer'
+								target='_blank'
+								href={`${link.link && link.link}`}
+								className='px-2 py-2 transition hover:text-_974EF2'>
+								{link.name}
+							</a>
 						)}
 					</li>
 				))}
