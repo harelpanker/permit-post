@@ -19,7 +19,7 @@ const SectionCTA = ({ memberNumber }: CTAProps) => {
 				{/* cta top */}
 				<div className='flex flex-col items-center justify-center gap-[70px] lg:flex-row'>
 					<header className='flex w-full max-w-[486px] flex-col items-center gap-6 text-center lg:items-start lg:text-left'>
-						<h2 className='text-theme_orange_12 font-poppins text-4xl font-semibold lg:text-5xl'>
+						<h2 className='font-poppins text-4xl font-semibold text-_451E11 lg:text-5xl'>
 							<span className='block'>Test in minutes, </span>go to prod in days.
 						</h2>
 						<Button asChild>
@@ -32,7 +32,7 @@ const SectionCTA = ({ memberNumber }: CTAProps) => {
 				</div>
 
 				{/* cta bottom */}
-				<div className='text-theme_orange_12 mx-auto flex w-full max-w-lg flex-col items-center justify-center gap-6 rounded-3xl bg-[#FFCCA7] px-6 py-12 text-center lg:max-w-full lg:flex-row lg:items-start lg:gap-[90px] lg:px-12 lg:text-left'>
+				<div className='mx-auto flex w-full max-w-lg flex-col items-center justify-center gap-6 rounded-3xl bg-[#FFCCA7] px-6 py-12 text-center text-_451E11 lg:max-w-full lg:flex-row lg:items-start lg:gap-[90px] lg:px-12 lg:text-left'>
 					<div className='flex flex-col items-center gap-3 font-poppins lg:items-start'>
 						<h3 className='text-[26px] font-semibold tracking-[-1px] lg:text-4xl'>Join our Community</h3>
 						<p className='font-poppins text-lg font-semibold text-[#846358]'>{memberNumber} Members</p>

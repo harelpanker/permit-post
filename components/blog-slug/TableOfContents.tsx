@@ -10,7 +10,7 @@ type TableOfContentsProps = {
 const TableOfContents: FC<TableOfContentsProps> = ({ toc }) => {
 	return (
 		<Disclosure as='div' className='mb-6 flex flex-col gap-y-3 text-lg' defaultOpen={false}>
-			<DisclosureButton className='bg-theme_orange_12/5 group flex w-full items-center justify-between rounded-2xl p-5 font-medium'>
+			<DisclosureButton className='group flex w-full items-center justify-between rounded-2xl bg-_451E11/5 p-5 font-medium'>
 				<span>Table of Contents</span>
 				<ChevronDownIcon className='size-6 transition duration-300 group-data-[open]:rotate-180' />
 			</DisclosureButton>
@@ -20,9 +20,7 @@ const TableOfContents: FC<TableOfContentsProps> = ({ toc }) => {
 				<ul className='flex flex-col gap-y-3 text-base'>
 					{toc.map(({ id, title }) => (
 						<li key={id}>
-							<Link
-								className='hover:bg-theme_orange_12/5 flex rounded-lg px-4 py-2 transition duration-300'
-								href={`#${id}`}>
+							<Link className='flex rounded-lg px-4 py-2 transition duration-300 hover:bg-_451E11/5' href={`#${id}`}>
 								{title}
 							</Link>
 						</li>

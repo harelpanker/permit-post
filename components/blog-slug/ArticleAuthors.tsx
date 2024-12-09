@@ -46,7 +46,7 @@ const ArticleAuthors: FC<AuthorsProps> = ({ authorReference, authorSecondary }) 
 	return (
 		<div className='flex flex-col gap-y-12 pt-16'>
 			<div className='flex flex-col gap-y-2'>
-				<div className='bg-theme_orange_12 h-1 w-9'></div>
+				<div className='h-1 w-9 bg-_451E11'></div>
 				<Title size={26}>
 					<h2>Written by</h2>
 				</Title>
