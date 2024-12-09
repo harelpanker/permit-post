@@ -21,7 +21,7 @@ const AsideTags: FC<AsideTagsProps> = ({ tags }) => {
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
-							className='border-theme_black hover:bg-theme_black hover:text-theme_white rounded-full border px-3 py-1 text-xs font-medium transition duration-500 hover:!opacity-100 group-hover:opacity-50 md:text-sm'
+							className='border-_1F1206 hover:bg-_1F1206 hover:text-theme_white rounded-full border px-3 py-1 text-xs font-medium transition duration-500 hover:!opacity-100 group-hover:opacity-50 md:text-sm'
 							href={`https://www.permit.io/tags/${tag.slug}`}>
 							{tag.name}
 						</a>
