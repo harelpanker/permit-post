@@ -28,7 +28,7 @@ const Navbar = () => {
 		pathname === '/healthcare' ||
 		pathname.includes('/tags');
 
-	const isNoHeader = pathname === '/producthunt' || pathname === '/share-if';
+	// const isNoHeader = pathname === '/producthunt' || pathname === '/share-if';
 
 	const handleOpen = () => {
 		setOpen(!open);

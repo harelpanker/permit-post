@@ -21,7 +21,7 @@ import { ArticleProps } from '@/lib/types/post-page/page-props';
 const ArticleHeader: FC<ArticleProps> = ({ post }) => {
 	const pathname = usePathname();
 	const origin = typeof window !== 'undefined' && window.location.origin ? window.location.origin : '';
-	const slug = `${origin}${pathname}`;
+	// const slug = `${origin}${pathname}`;
 	return (
 		<Section className='pb-6 pt-20 lg:pb-12 lg:pt-32'>
 			<Container className='flex max-w-screen-lg flex-col gap-y-10'>
