@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
-export default function Home() {
+export default function NotFound() {
 	const baseUrl = 'https://www.permit.io';
 	const pathname = usePathname();
 
