@@ -3,7 +3,7 @@
 import { FC } from 'react';
 import Link from 'next/link';
 // import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
 import RemoteImage from '@/components/ui/RemoteImage';
 import Text from '@/components/ui/Text';
 import Title from '@/components/ui/Title';

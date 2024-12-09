@@ -42,6 +42,7 @@ const ArticleBody: FC<ArticleProps> = ({ post, readMore }) => {
 	}, []);
 
 	const content = unified()
+		// @ts-expect-error
 		.use(rehypeParse, { fragment: true })
 		.use(() => {
 			/* eslint-disable  @typescript-eslint/no-explicit-any */
@@ -62,7 +63,7 @@ const ArticleBody: FC<ArticleProps> = ({ post, readMore }) => {
 				});
 			};
 		})
-		//@ts-ignore
+		// @ts-expect-error
 		.use(rehypeStringify)
 		.processSync(post.richText.html)
 		.toString();
