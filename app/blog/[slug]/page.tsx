@@ -13,7 +13,7 @@ export const generateMetadata = async ({ params }: PageProps) => {
 };
 
 export default async function PostPage({ params }: PageProps) {
-	const slug = params.slug; // Extract slug after receiving params
+	const { slug } = await params;
 	const memberNumber = await getMembersTotalNumber();
 	const postD = await getPostDetails(slug);
 	const postData = postD[0];
