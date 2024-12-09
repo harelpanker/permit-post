@@ -44,6 +44,7 @@ const ArticleBody: FC<ArticleProps> = ({ post, readMore }) => {
 	const content = unified()
 		.use(rehypeParse, { fragment: true })
 		.use(() => {
+			/* eslint-disable  @typescript-eslint/no-explicit-any */
 			return (tree: any) => {
 				visit(tree, 'element', (node) => {
 					if (node.tagName === 'h2') {
