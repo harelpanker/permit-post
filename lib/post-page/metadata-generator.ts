@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 interface AuthorReference {
 	twitterCreator?: string;
 }
-
 interface PostDetails {
 	title: string;
 	summery: string; // Note: "summery" might be a typo of "summary"
@@ -16,7 +15,6 @@ interface PostDetails {
 	};
 	metaKeywords?: string;
 }
-
 interface PageProps {
 	params: Promise<{ slug: string }>;
 }
