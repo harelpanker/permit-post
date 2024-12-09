@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import RemoteImage from '@/components/ui/RemoteImage';
 import Text from '@/components/ui/Text';
@@ -12,11 +12,11 @@ import Container from '@/components/ui/Container';
 import ArticleBreadcrumbs from './ArticleBreadcrumbs';
 import { format } from 'date-fns';
 import { ArticleProps } from '@/lib/types/post-page/page-props';
-import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
-import styles from '@/styles/post/styles.module.css';
-import linkedin from '@/public/images/post-page/linkedin.svg';
-import facebook from '@/public/images/post-page/facebook.svg';
-import twitter from '@/public/images/post-page/twitter.svg';
+// import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
+// import styles from '@/styles/post/styles.module.css';
+// import linkedin from '@/public/images/post-page/linkedin.svg';
+// import facebook from '@/public/images/post-page/facebook.svg';
+// import twitter from '@/public/images/post-page/twitter.svg';
 
 const ArticleHeader: FC<ArticleProps> = ({ post }) => {
 	const pathname = usePathname();
@@ -89,7 +89,7 @@ const ArticleHeader: FC<ArticleProps> = ({ post }) => {
 								</Text>
 							</div>
 						</div>
-						<ul className={`${styles.share_ul} flex items-center gap-x-3`}>
+						{/* <ul className={`${styles.share_ul} flex items-center gap-x-3`}>
 							<li style={{ width: 'auto', height: 'auto', opacity: 1 }}>Share:</li>
 							<li>
 								<LinkedinShareButton url={slug}>
@@ -106,7 +106,7 @@ const ArticleHeader: FC<ArticleProps> = ({ post }) => {
 									<Image src={twitter} alt='twitter' width={20} height={20} />
 								</TwitterShareButton>
 							</li>
-						</ul>
+						</ul> */}
 					</div>
 				</header>
 			</Container>
