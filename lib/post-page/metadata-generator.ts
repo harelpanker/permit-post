@@ -1,12 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-interface PageProps {
-	params: {
-		slug: string;
-	};
-}
-
 interface AuthorReference {
 	twitterCreator?: string;
 }
@@ -23,13 +17,18 @@ interface PostDetails {
 	metaKeywords?: string;
 }
 
+interface PageProps {
+	params: Promise<{ slug: string }>;
+}
+
 export async function generateBlogPostMetadata({
 	params,
 	getPostDetails,
 }: PageProps & {
 	getPostDetails: (slug: string) => Promise<PostDetails[]>;
 }): Promise<Metadata> {
-	const { slug } = params;
+	const resolvedParams = await params;
+	const { slug } = resolvedParams;
 	const details = await getPostDetails(slug);
 	const postDetails = details[0];
 

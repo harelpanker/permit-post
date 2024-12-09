@@ -6,14 +6,15 @@ import { generateBlogPostMetadata } from '@/lib/post-page/metadata-generator';
 import SectionDotsBackground from '@/components/SectionDotsBackground';
 import '@/styles/post/style.css';
 
-type PageProps = { params: { slug: string } };
+type PageProps = { params: Promise<{ slug: string }> };
 
 export const generateMetadata = async ({ params }: PageProps) => {
 	return generateBlogPostMetadata({ params, getPostDetails });
 };
 
 export default async function PostPage({ params }: PageProps) {
-	const { slug } = params;
+	const resolvedParams = await params;
+	const { slug } = resolvedParams;
 	const memberNumber = await getMembersTotalNumber();
 	const postD = await getPostDetails(slug);
 	const postData = postD[0];
