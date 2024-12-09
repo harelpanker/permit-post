@@ -13,7 +13,7 @@ export const generateMetadata = async ({ params }: PageProps) => {
 };
 
 export default async function PostPage({ params }: PageProps) {
-	const { slug } = await params;
+	const { slug } = params;
 	const memberNumber = await getMembersTotalNumber();
 	const postD = await getPostDetails(slug);
 	const postData = postD[0];

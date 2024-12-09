@@ -29,7 +29,7 @@ export async function generateBlogPostMetadata({
 }: PageProps & {
 	getPostDetails: (slug: string) => Promise<PostDetails[]>;
 }): Promise<Metadata> {
-	const { slug } = await params;
+	const { slug } = params;
 	const details = await getPostDetails(slug);
 	const postDetails = details[0];
 
